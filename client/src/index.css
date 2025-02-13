@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn{
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+.btn.green{
+    background-color: rgb(20, 167, 20);
+}
+
+.btn.green:hover{
+    background-color: green;
+}
+
+.red{
+    background-color: rgb(221, 27, 27);
+}
+
+.btn.red:hover{
+    background-color: rgb(195, 8, 8);
+}
