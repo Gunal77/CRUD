@@ -7,7 +7,7 @@ function App(){
         <h3 className="text-xl w-800 p-6">CRUD APPLICATION</h3>
       </div>
       <div className='input-search'>
-        <input className='outline-black border' type="search"/>
+        <input className='outline-black border-2' type="search"/>
         <button className='btn green'>Add Button</button>
       </div>
       <table>
