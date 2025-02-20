@@ -1,12 +1,1 @@
-[
-    { "id": 1, "name": "Gunal", "age": 21, "city": "Thanjavur"},
-    { "id": 2, "name": "Nivas", "age": 22, "city": "Mannargudi"},
-    { "id": 3, "name": "Harish", "age": 25, "city": "Needamangalam"},
-    { "id": 4, "name": "Praga", "age": 32, "city": "Needamangalam"},
-    { "id": 5, "name": "Sandy", "age": 19, "city": "Thiruvarur"},
-    { "id": 6, "name": "Rishab", "age": 23, "city": "Salem"},
-    { "id": 7, "name": "Vasanth", "age": 32, "city": "Ramnad"},
-    { "id": 8, "name": "Rishi", "age": 45, "city": "Pudukottai"},
-    { "id": 9, "name": "Abu", "age": 29, "city": "Ooty"},
-    { "id": 10, "name": "Ram", "age": 11, "city": "Dindugal"}
-]
+[{"id":2,"name":"Nivas","age":22,"city":"Mannargudi"},{"id":3,"name":"Harish","age":25,"city":"Needamangalam"},{"id":4,"name":"Praga","age":32,"city":"Needamangalam"},{"id":5,"name":"Sandy","age":19,"city":"Thiruvarur"},{"id":6,"name":"Rishab","age":23,"city":"Salem"},{"id":7,"name":"Vasanth","age":32,"city":"Ramnad"},{"id":8,"name":"Rishi","age":45,"city":"Pudukottai"},{"id":9,"name":"Abu","age":29,"city":"Ooty"},{"id":10,"name":"Thirumal","age":11,"city":"Dindugal"},{"id":11,"name":"Ram","age":21,"city":"Dindugal"}]

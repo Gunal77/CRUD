@@ -26,3 +26,20 @@
 .btn.red:hover{
     background-color: rgb(195, 8, 8);
 }
+.table th,
+.table td{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.table th{
+    background-color: #f2f2f2;
+}
+
+.table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.table tr:hover{
+    background-color: #ddd;
+}
