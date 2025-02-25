@@ -5,6 +5,8 @@ import './App.css';
 function App(){
   const [users, setUsers] = useState([]);
   const [filterUser, setFilterUser] = useState([]);
+  const [isModel, setIsModel] = useState(false);
+  const [userData, setUserData] = useState({name: "", age: "", city: ""});
   
   const getAllUsers = async () => {
     await axios.get("http://localhost:2000/users").then
@@ -35,17 +37,23 @@ function App(){
       setFilterUser(res.data);
     });
   }
-  }
+  };
+
+  //Add User Details
+  const handleAddRecord = () => {
+    setUserData({name: "", age: "", city: ""});
+    setIsModel(true);
+  };
 
   
   return(
     <>
-      <div className=" mb-5 border-b-2 border-gray-300 max-w-[800px] m-auto bg-black text-white">
+      <div className=" mb-5 border-b-2 border-gray-300 max-w-[800px] m-auto">
         <h3 className="flex justify-center text-xl w-800 p-6">CRUD APPLICATION</h3>
       </div>
       <div className='flex justify-between items-center mb-6  max-w-[800px] m-auto'>
         <input className='w-[300px] h-10 border-gray-400 outline-none border-2' type="search" placeholder='Search Text Here' onChange={handleSearchChange}/>
-        <button className='btn green'>Add Button</button>
+        <button onClick={handleAddRecord} className='btn green'>Add Button</button>
       </div>
       <table className='table w-[100%] cursor-pointer  max-w-[800px] m-auto'>
         <thead>
@@ -75,6 +83,20 @@ function App(){
           
         </tbody>
       </table>
+      {isModel && (
+        // <div className='block fixed z-[1] left-0 top-0 w-[100%] h-[100%] bg-gray-300 overflow-auto'>
+        //   <div className='bg-slate-100 w-[80%] m-[10%] auto p-[20px] border-[1px] border-solid border-gray-500'>
+            
+        //     <h1>USER  RECORD</h1>
+        //   </div>
+        // </div>
+        <div className='model'>
+          <div className='model-content'>
+            <span></span>
+            <h2>USER RECORD</h2>
+          </div>
+        </div>
+      )}
     </>
   )
 }
